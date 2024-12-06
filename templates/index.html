@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Analytics</title>
+    <!-- CSS file linking , change file to change styling  -->
+    <link rel="stylesheet" href="static\style.css">
+
+</head>
+<body>
+    <h1>Add customer to visualize data </h1>
+    <!-- Form that takes in all the input -->
+    <form method="post" action="/add" enctype="multipart/form-data">
+        <input type="text" name="FirstName" placeholder="Add FirstName" required>
+        <input type="text" name="LastName" placeholder="Add FirstName" required>
+        <br> <br>
+        <label for="birthday">Select date of birth :</label>
+        <input type="date" id="birthday" name="birthday" required>
+        <label for="CustomerData">Add Customer Data :</label>
+        <input type="file" name="CustomerData" accept=".xlsx" required>
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Conditional  plot that is shown only if we have atleast 1 customer data -->
+    {% if plot_url %}
+    <h2>Visualization</h2>
+    <p>Customer: {{ firstname }} {{ lastname }}</p>
+    <p>Date of Birth: {{ dob }}</p>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Line Graph">
+    {% endif %}
+
+</body>
+</html>
