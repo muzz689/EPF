@@ -16,7 +16,8 @@ How it works
 3. Customer information is stored in the customers table and financial data is stored in the customer_data table.
 4. A line graph showing income and expenses trends and display it on the same page.
 
-Assumptions
+Assumptions 
+
 Single User: There is no login or user management, as specified in the assignment pdf.
 Simple Database: SQLite is used for simplicity, with two tables (customers and customer_data).
 One Customer at a Time: The system always displays the most recent customer's graph and extending to multiple customers would involve adding a simple selection mechanism.
@@ -24,6 +25,7 @@ Customer infor: We only take in First name, last name and date of birth of the c
 Excel File Format: The uploaded file is an excel file and  is assumed to contain Month, Income, and Expenses columns.
 
 Extensibility
+
 The system designed with 2 tables already allows the addition of multiple customers in the database but only shows graph of the most recent customer added as required by the task, however we can introduce a dropdown list  for selecting different customers.
 The system can also allow users to compare multiple customers' financial data by simply altering the create plot function.
 Any additional preprocessing of the excel data can simply be done in the add route function before adding data to the database without changing any of the other functions.
