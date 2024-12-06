@@ -8,15 +8,14 @@ This project is a simple web-based workflow system for capturing customer inform
 Installation and Running
 
 Clone the repository and install the required packages outlined in the requirements.txt file using pip.
-To run the application : python app.py
-Open browswer and navigate to http://127.0.0.1:5000
+To run the application : python app.py   and then open browswer and navigate to http://127.0.0.1:5000
 
 
 How it works
 1. At the start of the app a database is created with 2 tables ( customers and customer_data)
 2. A form is presented on the main page with required input fields to input customer details(First Name, Last Name, Date of Birth) and upload their financial data( Excel file).
 3. Customer information is stored in the customers table and financial data is stored in the customer_data table.
-4. A line graph showing income and expenses trends and display it on the same page.
+4. A line graph showing income and expenses trends is displayed on the same page.
 
 Assumptions 
 
