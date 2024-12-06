@@ -1,10 +1,12 @@
 # EPF
 
 Project Description
+
 This project is a simple web-based workflow system for capturing customer information and rendering a temporal graph of their income and expenses over the last 12 months. The system is built using HTML , Python and Flask, with SQLite for data storage and Matplotlib for graph visualization.
 
 
 Installation and Running
+
 Clone the repository and install the required packages outlined in the requirements.txt file using pip.
 To run the application : python app.py
 Open browswer and navigate to http://127.0.0.1:5000
